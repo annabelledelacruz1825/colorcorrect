@@ -42,3 +42,29 @@
       </div>
     </div>
   </div>
+    <script>
+
+    // JavaScript function that wraps everything
+    $(document).ready(function() {
+
+      // Array for word colors
+      var colorsOfText = [];
+
+      // Target word
+      var targetColor;
+
+      // Target word color
+      var targetColorOfText;
+
+      // User"s selection
+      var userAnswer;
+
+      // Array for words
+      var colors = [
+        "brown",
+        "blue",
+        "magenta",
+        "teal",
+        "coral",
+        "black"
+      ];

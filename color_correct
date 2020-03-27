@@ -35,3 +35,10 @@
         </h3>
       </div>
       <div class="card-body">
+      <!-- Create colors to pick -->
+        <ul class="list-unstyled" id="color-picker">
+        </ul>
+
+      </div>
+    </div>
+  </div>

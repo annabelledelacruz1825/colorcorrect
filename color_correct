@@ -26,3 +26,12 @@
     <div class="card">
       <div class="card-header">
         <h3 class="card-title">
+
+
+ <!-- Create random target color -->
+          <span id="rand-target-color">
+          </span>
+
+        </h3>
+      </div>
+      <div class="card-body">

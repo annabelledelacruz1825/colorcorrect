@@ -68,3 +68,23 @@
         "coral",
         "black"
       ];
+      
+       // This function sets a random color "word" and a random set of colors "visuals"
+      function randColor() {
+
+        // Set random word
+        targetColor = colors[Math.floor(Math.random() * colors.length)];
+        $("#rand-target-color").text(targetColor);
+
+        // Set random word color
+        targetColorOfText = colors[Math.floor(Math.random() * colors.length)];
+        $("#rand-target-color").css("color", targetColorOfText);
+      }
+
+      // This function creates the actual "game" logic.
+      function createColorPicker() {
+
+        // Shuffle color array
+        colors.sort(function() {
+          return 0.5 - Math.random();
+        });

@@ -88,3 +88,41 @@
         colors.sort(function() {
           return 0.5 - Math.random();
         });
+ // Push to text color array
+        for (var i = 0; i < colors.length; i++) {
+          colorsOfText.push(colors[i]);
+        }
+
+        // Shuffle text color array
+        colorsOfText.sort(function() {
+          return 0.5 - Math.random();
+        });
+
+        // Loop through all colors in the array
+        for (var i = 0; i < colors.length; i++) {
+
+          // Create element to hold word
+          var holder = document.createElement("li");
+          $("#color-picker").append(holder);
+
+          // Output a word
+          $(holder).attr("id", colors[i]).text(colors[i]);
+
+          // Make word a random color
+          $(holder).css("color", colorsOfText[i]);
+        }
+      }
+
+      // Clear the divs and arrays upon each round.
+      function clear() {
+        $("#rand-target-color").empty();
+        $("#color-picker").empty();
+        colorsOfText = [];
+      }
+
+      // Function for resetting colors and setting new colors.
+      function reset() {
+        clear();
+        randColor();
+        createColorPicker();
+      }
